@@ -64,7 +64,7 @@ for (var i = 0; i < operator.length; i++) {
     } else {
       var output = getOutput();
       var history = getHistory();
-      //if output is empty but history is not and we have operator at the end we can change it 
+      //if output is empty but history is not and we have operator at the end we can change it
       if (output == "" && history != "") {
         //check last char is number or operator
         if (isNaN(history[history.length - 1])) {
@@ -72,10 +72,9 @@ for (var i = 0; i < operator.length; i++) {
         }
       }
       if (output != "" || history != "") {
-       //condition ?true:false
+        //condition ?true:false
         //if output is empty output if not we reverse the format
-        output = output ==""?
-          output : reverseFormat(output);
+        output = output == "" ? output : reverseFormat(output);
         history = history + output;
         if (op == "equal") {
           let result = eval(history);
@@ -106,7 +105,9 @@ for (var i = 0; i < number.length; i++) {
   number[i].addEventListener("click", function() {
     let output = reverseFormat(getOutput());
     //if output is number
+
     if (output != NaN) {
+     
       output = output + this.id;
       showOutput(output);
     }
