@@ -47,6 +47,7 @@ html {
   .history {
     grid-column: 1/4;
     grid-row: 1/2;
+    height: 40px;
     color: white;
     text-align: right;
   }
@@ -73,8 +74,6 @@ html {
     color: black;
     border-radius: 50px;
   }
-  
-  
   
   #Clear {
     grid-column: 1/3;
