@@ -1,4 +1,4 @@
-# calculator(584-Project-2)
+# calculator(584-Project-1-2)
 ## Instructions
 
 #### Match your layout as close to the screenshot as possible using the CSS properties discussed and also researching MDN for new properties if needed. 
